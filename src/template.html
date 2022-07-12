@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <div id="content">
+        <div id="headerWrapper">
+            <div id="weatherHeader">The Weather</div>
+        </div>
+        <form novalidate>
+            <label for="cityInput">City: </label>
+            <input type="text" id="cityInput" name="city" placeholder="Enter the name of your city">
+            <input type="button" value="Submit" id="submitCity">
+        </form>
+        <div id="mainWrapper">
+            <div id="loading"></div>
+            <div id="cityName"></div>
+            <div id="cityWeather"></div>
+            <div id="weatherDescription"></div>
+            <div id="temperature"></div>
+            <div id="windspeed"></div>
+            <div id="windDirection"></div>
+        </div>
+    </div>
+</body>
+</html>
